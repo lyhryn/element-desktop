@@ -62,7 +62,7 @@
     "asar": "^2.0.1",
     "chokidar": "^3.5.2",
     "detect-libc": "^1.0.3",
-    "electron": "^19",
+    "electron": "^19.0.8",
     "electron-builder": "22.11.4",
     "electron-builder-squirrel-windows": "22.11.4",
     "electron-devtools-installer": "^3.1.1",
@@ -122,7 +122,10 @@
       "darkModeSupport": true
     },
     "win": {
-      "target": ["squirrel", "msi"],
+      "target": [
+        "squirrel",
+        "msi"
+      ],
       "sign": "scripts/electron_winSign"
     },
     "msi": {

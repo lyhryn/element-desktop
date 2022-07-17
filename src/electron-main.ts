@@ -276,8 +276,8 @@ if (!app.commandLine.hasSwitch('enable-features')) {
 
 const gotLock = app.requestSingleInstanceLock();
 if (!gotLock) {
-    console.log('Other instance detected: exiting');
-    app.exit();
+    console.log('Other instance detected: continuing');
+    // app.exit();
 }
 
 // do this after we know we are the primary instance of the app
