@@ -3704,7 +3704,8 @@ html {
 }
 .mx_MatrixChat
   > :not(.mx_LeftPanel):not(.mx_SpacePanel):not(.mx_ResizeHandle):not(.mx_LeftPanel_outerWrapper) {
-  background-color: var(--secondary-color);
+  background: url("texturebase.png");
+  background-position: 500px;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
