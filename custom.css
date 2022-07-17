@@ -3210,7 +3210,7 @@ html {
   max-width: 68px;
 }
 .mx_LeftPanel {
-  background-color: rgba(33, 38, 44, 0.9);
+  background-color: rgba(26,26,26, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3222,7 +3222,7 @@ html {
   overflow: hidden;
 }
 .mx_LeftPanel .mx_LeftPanel_roomListContainer {
-  background-color: rgba(33, 38, 44, 0.9);
+  background-color: rgba(26,26,26, 0.9);
   -webkit-box-flex: 1;
   -ms-flex: 1 0 0px;
   flex: 1 0 0;
@@ -17606,7 +17606,7 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   border-color: #b9bec6;
 }
 .mx_ReactionsRowButton.mx_ReactionsRowButton_selected {
-  background-color: #1f6954;
+  background-color: var(--primary-color);
   border-color: var(--accent-color);
 }
 .mx_ReactionsRowButton.mx_AccessibleButton_disabled {
@@ -20566,13 +20566,13 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   right: -35px;
 }
 .mx_EventTile[data-layout="bubble"][data-self="true"] .mx_MediaBody {
-  background: #133a34;
+  background: #99063d;
 }
 .mx_EventTile[data-layout="bubble"][data-self="true"] .mx_MessageActionBar {
   inset-inline-end: 0;
 }
 .mx_EventTile[data-layout="bubble"][data-self="true"] {
-  --backgroundColor: #133a34;
+  --backgroundColor: #99063d;
 }
 .mx_EventTile[data-layout="bubble"] .mx_EventTile_line {
   position: relative;
@@ -25186,7 +25186,7 @@ a.mx_RoomPreviewBar_inviter {
   height: 16px;
   border-radius: 0;
   z-index: 1;
-  background-color: rgba(33, 38, 44, 0.9);
+  background-color: rgba(26,26,26, 0.9);
 }
 .mx_RoomSublist.mx_RoomSublist_minimized.mx_RoomSublist_hasMenuOpen
   .mx_RoomSublist_menuButton:before,
@@ -26595,7 +26595,7 @@ a.mx_RoomPreviewBar_inviter {
 .mx_LayoutSwitcher
   .mx_LayoutSwitcher_RadioButtons
   .mx_StyledRadioButton_checked {
-  background-color: rgba(13, 189, 139, 0.08);
+  background-color: rgba(239, 9, 95, 0.08);
 }
 .mx_LayoutSwitcher .mx_LayoutSwitcher_RadioButtons .mx_EventTile {
   margin: 0;
