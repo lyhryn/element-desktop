@@ -131,6 +131,10 @@
   --tertiary-color: #121212; /* #20252b */
   --accent-color: #ef095f; /* #0dbd8b */
   --important-color: #6f0003; /* #ff5b55 */
+  
+  /* CUSTOM */
+  --bubble-color: #590424;
+ /*  20574 */
 }
 body {
   color-scheme: light;
@@ -20501,9 +20505,6 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-.mx_EventTile[data-layout="bubble"][data-self="false"] {
-  --backgroundColor: var(--primary-color);
-}
 .mx_EventTile[data-layout="bubble"][data-self="true"] .mx_EventTile_line {
   -webkit-margin-start: auto;
   margin-inline-start: auto;
@@ -20566,13 +20567,16 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   right: -35px;
 }
 .mx_EventTile[data-layout="bubble"][data-self="true"] .mx_MediaBody {
-  background: #99063d;
+  background: #590424;
+}
+.mx_EventTile[data-layout="bubble"][data-self="true"] {
+  --bubble-color: #590424;
+}
+.mx_EventTile[data-layout="bubble"][data-self="false"] {
+  --bubble-color: var(--primary-color);
 }
 .mx_EventTile[data-layout="bubble"][data-self="true"] .mx_MessageActionBar {
   inset-inline-end: 0;
-}
-.mx_EventTile[data-layout="bubble"][data-self="true"] {
-  --backgroundColor: #99063d;
 }
 .mx_EventTile[data-layout="bubble"] .mx_EventTile_line {
   position: relative;
@@ -20682,7 +20686,7 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   .mx_EventTile_line:not(.mx_EventTile_mediaLine) {
   padding: calc(var(--gutterSize) - 1px);
   padding-right: 60px;
-  background: var(--backgroundColor);
+  background: var(--bubble-color);
 }
 .mx_EventTile[data-layout="bubble"]:not(.mx_EventTile_noBubble)
   .mx_EventTile_line:not(.mx_EventTile_mediaLine)
@@ -20927,7 +20931,7 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
   justify-content: center;
 }
 .mx_EventTile.mx_EventTile_noBubble[data-layout="bubble"] {
-  --backgroundColor: transparent;
+  --bubble-color: transparent;
 }
 .mx_EventTile.mx_EventTile_noBubble[data-layout="bubble"]
   .mx_EventTile_line.mx_EventTile_emote {
@@ -20974,7 +20978,7 @@ span.mx_MVideoBody .mx_MVideoBody_container video {
 .mx_EventTile.mx_EventTile_info[data-layout="bubble"],
 .mx_EventTile.mx_EventTile_leftAlignedBubble[data-layout="bubble"],
 .mx_GenericEventListSummary[data-layout="bubble"][data-expanded="false"] {
-  --backgroundColor: transparent;
+  --bubble-color: transparent;
   --gutterSize: 0;
 }
 .mx_EventTile.mx_EventTile_bubbleContainer[data-layout="bubble"]
